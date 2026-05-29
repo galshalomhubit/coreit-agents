@@ -1,0 +1,13 @@
+{
+  "name": "coreit-agents",
+  "version": "1.0.0",
+  "description": "CoreIT autonomous lead gen & outreach agents",
+  "scripts": {
+    "lead-gen": "npx ts-node lead-gen-agent.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  }
+}
