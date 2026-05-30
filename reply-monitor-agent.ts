@@ -13,7 +13,7 @@ import path from "path";
 const RESEND_API_KEY = process.env.RESEND_API_KEY!;
 const FOUNDER_EMAIL = "gal.shalom@coreitportal.com";
 const FROM = "CoreIT Agent <sales@coreitportal.com>";
-const REPLIES_LOG = path.join(__dirname, "replies.json");
+const REPLIES_LOG = path.resolve("replies.json");
 
 function request(method: string, hostname: string, path: string, body?: any, headers: Record<string, string> = {}): Promise<any> {
   return new Promise((resolve, reject) => {
