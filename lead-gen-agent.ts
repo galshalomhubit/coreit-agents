@@ -208,6 +208,7 @@ async function main() {
   for (const domain of TARGET_DOMAINS) {
     try {
       const added = await processDomain(domain, contacted);
+      totalAdded += added;
       if (added > 0) console.log(`  ✓ ${domain}: ${added} new leads`);
       else console.log(`  — ${domain}: no new targets`);
     } catch (err) {
